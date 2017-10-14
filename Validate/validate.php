@@ -1,5 +1,5 @@
 <?php
-//put smtp email code below
+//update smtp email code below
 require '../PHPMail/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->SMTPOptions = array(
@@ -23,7 +23,7 @@ $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to
 session_start();
 /* Check all form inputs using check_input function */
-//ADD YOUR EMAIL PASSWORD
+//ADD YOUR FULL NAME BELOW
 $yourname = check_input($_POST['yourname'], "YOUR FULL NAME");
 //SUBJECT WEEK 8 IF FIELD LEFT EMPTY
 $subject  = check_input($_POST['subject'], 'Week 8');
