@@ -15,14 +15,18 @@ $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'ckonkol@gmail.com'; // SMTP username
-$mail->Password = "SecurePassword;'67"; // SMTP password
+//ADD YOUR EMAIL ADDRESS
+$mail->Username = '@gmail.com'; // SMTP username is your gmail address
+//ADD YOUR EMAIL PASSWORD
+$mail->Password = ""; // SMTP password is your gmail password
 $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to
 session_start();
 /* Check all form inputs using check_input function */
-$yourname = check_input($_POST['yourname'], "Chuck Konkol");
-$subject  = check_input($_POST['subject'], "Week 8");
+//ADD YOUR EMAIL PASSWORD
+$yourname = check_input($_POST['yourname'], "YOUR FULL NAME);
+//UPDATE SUBJECT
+$subject  = check_input($_POST['subject'], 'Week 8');
 $email    = check_input($_POST['email']);
 $website  = check_input($_POST['website']);
 $likeit   = check_input($_POST['likeit']);
