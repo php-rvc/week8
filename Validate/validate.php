@@ -54,6 +54,7 @@ Name: $yourname<br>
 E-mail: $email<br>
 URL: $website<br>
 <br>
+Favorite color? $color<br>
 Like the website? $likeit<br>
 How did he/she find it? $how_find<br>
 <br>
