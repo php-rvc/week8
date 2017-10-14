@@ -24,8 +24,8 @@ $mail->Port = 587; // TCP port to connect to
 session_start();
 /* Check all form inputs using check_input function */
 //ADD YOUR EMAIL PASSWORD
-$yourname = check_input($_POST['yourname'], "YOUR FULL NAME);
-//UPDATE SUBJECT
+$yourname = check_input($_POST['yourname'], "YOUR FULL NAME");
+//SUBJECT WEEK 8 IF FIELD LEFT EMPTY
 $subject  = check_input($_POST['subject'], 'Week 8');
 $email    = check_input($_POST['email']);
 $website  = check_input($_POST['website']);
